@@ -6,5 +6,5 @@
 
 Atividades Do DIO (*Digital Innovation One*)
 
-- Recriando a página inicial do [Instagram](https://github.com/flaviomian/portfolio/instagram-landing/index.html)
+- Recriando a página inicial do [Instagram](https://flaviomian.github.io/portfolio/instagram-landing/index.html)
 
