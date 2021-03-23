@@ -54,11 +54,11 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+    bottom-margin: 3px;
 }
 
 .group:nth-child(1) {
     min-height: 19rem;
-    bottom-margin: 5px;
 }
 
 .instagram-logo {
