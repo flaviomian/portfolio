@@ -64,7 +64,7 @@ body {
     height: 3rem;
 }
 
-.profile-photo {
+.profile-picture {
     display: flex;
     justify-content: center;
     align-items: center;
