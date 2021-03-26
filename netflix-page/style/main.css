@@ -46,7 +46,7 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)100%), url('/img/thaisverso4.jpg');
+    background: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)100%), url('../img/thaisverso4.jpg');
     background-position: center;
     height: 400px;
     background-size: cover;
@@ -96,7 +96,6 @@ i {
 }
 
 .carrossel-filmes {
-    background: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)100%);
     margin-top: 5px;
 }
 
