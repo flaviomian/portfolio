@@ -1,3 +1,108 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Elementos Base*/
+
 body {
-    backgorund-color: #000
+    background-color: var(--preta);
+    font-family: 'Arial';
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 35px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff
+}
+
+
+/*Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)100%), url('/netflix-page/img/thaisverso4.jpg');
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.botao {
+    padding: 15px;
+    align-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover {
+    color: black;
+    background-color: white;
+}
+
+i {
+    margin: 5px;
+}
+
+.carrossel-filmes {
+    background: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)100%);
+    margin-top: 5px;
+}
+
+.box-filme {
+    height: 400px;
+    width: 100%;
+    display: block;
+    transition: ease-in;
 }
