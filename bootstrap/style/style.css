@@ -1,0 +1,91 @@
+:root {
+    --fundo: #263140;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* a {
+    font-style: normal;
+    text-decoration-line: none;
+}
+
+* a:hover {
+    color: limegreen;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cv-code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.tag {
+    color: hotpink;
+    padding-top: 20px;
+}
+
+.card .card-body .tag {
+    color: hotpink;
+    padding: 0;
+}
+
+.bracket {
+    color: whitesmoke;
+    display: contents;
+}
+
+.conteudo {
+    color: turquoise;
+    font-style: italic;
+    margin-left: 25px;
+}
+
+.subitem {
+    color: khaki;
+    font-style: normal;
+    margin-right: -10px;
+}
+
+.valor {
+    color: rgb(177, 132, 241);
+    margin-right: -9px;
+}
+
+.medida {
+    color: hotpink;
+    margin-right: -10px;
+}
+
+.semicolon {
+    color: whitesmoke;
+}
+
+
+/*Comentário */
+
+.comentario {
+    color: rgb(92, 81, 153);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tag2 {
+    color: rgb(24, 248, 24);
+    padding-top: 20px;
+}
+
+.cards .row {
+    padding: 10px;
+}
+
+.card {
+    background-color: rgba(1, 1, 1, 0.253);
+}
