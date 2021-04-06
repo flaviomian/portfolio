@@ -1,0 +1,26 @@
+body {
+    height: 95vh;
+    width: 95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: lightgreen;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: dimgray;
+}
+
+#snake,
+.tela {
+    border: 10px black;
+}
+
+.btm {
+    margin-top: 10px;
+    border-style: solid;
+    border-color: darkgreen;
+    color: white;
+    background-color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}

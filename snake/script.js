@@ -13,22 +13,31 @@ let comida = {
     y: Math.floor(Math.random() * 15 + 1) * box
 }
 
+const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+
 function criarBG() {
     context.fillStyle = "lightgreen";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
+var g = context.createLinearGradient(snake[0].x, 1, 1, snake[0].y);
+g.addColorStop(0, '#0d571f');
+g.addColorStop(.5, '#8fb398');
+g.addColorStop(1, 'green');
 
 
 function criarCobra() {
     for (i = 0; i < snake.length; i++) {
-        context.fillStyle = "green";
+        context.fillStyle = g;
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
+
+
 function criarComida() {
-    context.fillStyle = "red";
+    context.fillStyle = "#" + randomColor;
     context.fillRect(comida.x, comida.y, box, box);
 }
 
