@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX009 - Consulta Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Consulta Nacionalidade</h1>
+    Digite seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="consulta()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function consulta() {
+            var p = document.getElementById('pais').value.toUpperCase()
+            var res = document.querySelector('div#resultado')
+
+            res.innerHTML = `<p>Vivendo no país <strong>${p}</strong></p>`
+            if (p == 'BRASIL') {
+                res.innerHTML += `<p>Você é Brasileiro(a)</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro(a)</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
