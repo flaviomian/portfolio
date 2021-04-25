@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-001 - JAVASCRIPT</title>
+    <style>
+        body {
+            background-color: #2b4a58;
+            color: white;
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Exercicio 003 Concluído</p>
+
+    <script>
+        //var n1 = Number.parseInt(prompt('Digite um número')) -> força o numero para Int
+        //var n1 = Number.parseFloat(...) -> força o numero para Float
+        var n1 = Number(prompt('Digite um número:')) //O numero inserido é reconhecido (podendo ser int ou float)
+        var n2 = Number(prompt('Digite outro número'));
+        var soma = n1 + n2
+        alert(`A soma dos valores é: ${soma}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 005</title>
+    <style>
+        body {
+            background-color: black;
+            color: #14ff33;
+            font: normal 13pt monospace;
+        }
+        
+        .btm {
+            background-color: forestgreen;
+            color: white;
+            margin: 0pt hidden;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estudos em DOM</h1>
+    <p>Resultado:</p>
+    <p>Aprendendo <strong>DOM</strong> em JavaScript.</p>
+    <button class='btm' onclick='d()'>Clique</button>
+    <p id="texto" onmouseover="t()" onmouseout="t2()">Passe o mouse.</p>
+    <p id='para'>Clique para mudar cor deste parágrafo.</p>
+    <button class='btm' id="colorir">Mudar Cor</button>
+    <script>
+        //var p1 = window.document.getElementsByTagName('p ')[0]
+        //var d = window.document.getElementById('msg ')
+        const randCor = () => {
+            let x = document.querySelector('p#para');
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            let novaCor = '#' + randomColor;
+            x.style.color = novaCor;
+
+        }
+        colorir.addEventListener("click", randCor)
+
+        function d() {
+            document.querySelector('button.btm').outerHTML = 'Olá, Mundo!';
+        }
+
+        function t() {
+            document.getElementById('texto').innerHTML = 'Texto alterado.';
+        }
+
+        function t2() {
+            document.getElementById('texto').innerHTML = 'Passe o mouse.'
+        }
+
+
+        //ID = # | Classe = .
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX007 - Eventos DOM - Somando Numeros</title>
+    <style>
+        body {
+            background-color: black;
+            font: 18px normal;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(152, 255, 49);
+            text-align: center;
+        }
+        
+        input {
+            border: hidden;
+            width: 80px;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        input#botao {
+            width: 80px;
+            background-color: rgb(152, 255, 49);
+            color: black;
+        }
+        
+        .resultado {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando números</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" id="botao">
+    <div class="resultado" id="resultado"></div>
+    <script>
+        botao.addEventListener("click", somar)
+
+        function somar() {
+            let tn1 = document.getElementById('txtn1')
+            let tn2 = document.getElementById('txtn2')
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let sum = n1 + n2
+            resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${sum}</strong>`
+        }
+    </script>
+</body>
+
+</html>
