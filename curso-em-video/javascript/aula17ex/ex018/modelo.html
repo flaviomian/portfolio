@@ -15,14 +15,17 @@
     </header>
     <section>
         <div>
-            <p>Número (entre 1 e 100):
-                <input type="number" name="numtxt" id="numtxt">
-                <button type="submit" onclick="addnum()">Adicionar</button>
-            </p>
+            Número (entre 1 e 100):
+            <input type="number" name="numtxt" id="numtxt">
+            <button type="submit" onclick="addnum()">Adicionar</button>
+
             <p><select name="listanum" id="listanum" size="10"></select></p>
+            <p>
+                <button type="submit" onclick="resultado()">Analisar</button>
+            </p>
         </div>
         <div id="res">
-            <button type="submit" onclick="resultado()">Analisar</button>
+
         </div>
     </section>
     <footer>Flavio Mian</footer>
