@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 239, 186);
+}
+
+.sky {
+    background: linear-gradient(rgb(149, 232, 238) 0px, rgb(255, 239, 186) 400px);
+    height: 400px;
+}
+
+.cloud1 {
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50% 75%;
+    position: absolute;
+    top: 50px;
+    filter: blur(10px);
+    left: 30%;
+    animation: cloudmove 60s infinite;
+}
+
+.cloud1:before {
+    content: "";
+    width: 190px;
+    height: 60px;
+    background-color: white;
+    border-radius: 70% 35%;
+    position: absolute;
+    top: 90px;
+    left: 60%;
+    filter: blur(8px);
+}
+
+.cloud1:after {
+    content: "";
+    width: 230px;
+    height: 80px;
+    background-color: white;
+    border-radius: 70% 35%;
+    position: absolute;
+    top: 25px;
+    right: 300%;
+    filter: blur(10px);
+}
+
+.cloud2 {
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50% 75%;
+    position: absolute;
+    top: 185px;
+    filter: blur(15px);
+    left: 70%;
+    animation: cloudmove1 50s infinite ease;
+}
+
+.cloud2:before {
+    content: "";
+    width: 190px;
+    height: 46px;
+    background-color: white;
+    border-radius: 70% 35%;
+    position: absolute;
+    top: 390px;
+    left: 99%;
+    filter: blur(15px);
+}
+
+.cloud2:after {
+    content: "";
+    width: 230px;
+    height: 80px;
+    background-color: white;
+    border-radius: 70% 35%;
+    position: absolute;
+    top: 130px;
+    right: 280%;
+    filter: blur(18px);
+}
+
+.sun {
+    position: relative;
+    left: 200px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgba(255, 0, 0, 0.514) 0px, orange 100px);
+    box-shadow: rgb(224, 190, 95) 50px 15px 100px 25px;
+    border-radius: 50%;
+}
+
+.sun::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    box-shadow: rgb(239, 241, 75) 10px 10px 60px 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 50px;
+}
+
+.ground {
+    background: linear-gradient( 180deg, rgb(160, 199, 250) 0px, rgb(90, 220, 243) 50px, rgb(183, 204, 250) 150px, rgba(255, 255, 255, 0.466) 160px, rgb(252, 244, 141) 180px);
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+
+.surf {
+    width: 90px;
+    height: 20px;
+    background: rgb(85, 63, 21);
+    background: linear-gradient(brown 0px, green 5px, brown 10px);
+    box-shadow: rgba(255, 255, 255, 0.664) 5px 5px 10px 2px;
+    border-radius: 50%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    position: relative;
+    left: 50%;
+    top: 0;
+    animation: surfmove infinite 4s;
+}
+
+.wave svg {
+    filter: blur(25px);
+    fill: rgba(255, 255, 255, 0.582);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 78px;
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    animation-name: wave-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 64px;
+}
+
+.wave2 .shape-fill {
+    fill: rgba(255, 255, 255, 0.534);
+}
+
+.wave3 {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    animation: wave-move2 4s infinite ease;
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 64px;
+}
+
+.wave3 .shape-fill {
+    fill: white;
+    filter: blur(5px);
+}
+
+@keyframes wave-move {
+    0% {
+        bottom: 95px;
+    }
+    50% {
+        bottom: 90px;
+    }
+    100% {
+        bottom: 95px;
+    }
+}
+
+@keyframes surfmove {
+    0% {
+        top: 1px;
+        left: 50%;
+    }
+    50% {
+        top: 0;
+        left: 51%;
+    }
+}
+
+@keyframes wave-move2 {
+    0% {
+        bottom: 142px;
+    }
+    50% {
+        bottom: 139px;
+    }
+    100% {
+        bottom: 142px;
+    }
+}
+
+@keyframes cloudmove {
+    0% {
+        right: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes cloudmove1 {
+    0% {
+        right: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+}
